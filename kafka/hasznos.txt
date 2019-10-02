@@ -1,0 +1,3 @@
+# YARN/HDFS NameNode safe mode kikapcsolása
+# újraindítás és sleep mode után!
+sudo su hdfs -l -c 'hdfs dfsadmin -safemode leave'
