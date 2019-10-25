@@ -19,8 +19,19 @@ fi
 
 #Zookeeper indítása
 cd /usr/local/kafka
-sudop bin/zookeeper-server-start.sh config/zookeeper.properties
+sudo bin/zookeeper-server-start.sh config/zookeeper.properties
 
 #Kafka indítása
 sudo bin/kafka-server-start.sh config/server.properties
+
+#Docker init
+docker ps
+
+#Időjárásadatok letöltése
+cd /mnt/D834B3AF34B38ECE/DEV/bkk-data-crawler
+gradle bootRun 
+
+#Útadatok letöltése
+cd /mnt/D834B3AF34B38ECE/DEV/bkk-route-crawker
+gradle bootRun
 
