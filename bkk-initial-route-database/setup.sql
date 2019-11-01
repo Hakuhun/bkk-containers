@@ -97,3 +97,33 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE TABLE IF NOT EXISTS weather (
+	id int(11) NOT NULL,
+	base VARCHAR(8) NULL,
+	clouds_all INT NULL,
+	cod INT NULL,
+	coord_lat FLOAT NULL,
+	coord_lon FLOAT NULL,
+	dt INT NULL,
+	id INT NULL,
+	main_humidity INT NULL,
+	main_pressure INT NULL,
+	main_temp FLOAT NULL,
+	main_temp_max FLOAT NULL,
+	main_temp_min FLOAT NULL,
+	name VARCHAR(23) NULL,
+	sys_country VARCHAR(2) NULL,
+	sys_id INT NULL,
+	sys_message FLOAT NULL,
+	sys_sunrise INT NULL,
+	sys_sunset INT NULL,
+	sys_type INT NULL,
+	visibility INT NULL,
+	weather_description VARCHAR(9) NULL,
+	weather_icon VARCHAR(3) NULL,
+	weather_id INT NULL,
+	weather_main VARCHAR(5) NULL,
+	wind_deg INT NULL,
+	wind_speed FLOAT NULL
+);
