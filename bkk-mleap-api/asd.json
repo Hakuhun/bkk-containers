@@ -1,0 +1,39 @@
+{
+    "schema": {
+      "fields": [{
+        "name": "routeId",
+        "type": "double"
+      }, {
+        "name": "stopId",
+        "type": "double"
+      }, {
+        "name": "month",
+        "type": "double"
+      }, {
+        "name": "dayOfWeek",
+        "type": "double"
+      }, {
+        "name": "hour",
+        "type": "double"
+      }, {
+        "name": "temperature",
+        "type": "double"
+      }, {
+        "name": "humidity",
+        "type": "double"
+      }, {
+        "name": "pressure",
+        "type": "double"
+      }, {
+        "name": "rain",
+        "type": "double"
+      }, {
+        "name": "snow",
+        "type": "double"
+      }, {
+        "name": "visibility",
+        "type": "double"
+      }]
+    },
+    "rows": [[3020.0,1391.0,11.0,5.0,0.0,9.64,93.0,1011.0,0.0,0.0,0.0]]
+}
