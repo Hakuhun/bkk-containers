@@ -3,11 +3,8 @@ version: '2'
 services:
   mongodb:
     image: 'bitnami/mongodb:4.0'
+    user: 'root'
     ports:
       - "27017:27017"
     volumes:
-      - '/mongodb_data:/bitnami'
-
-volumes:
-  mongodb_data:
-    driver: local
+      - '/mongodb_data/:/bitnami/mongodb/data/db/'
