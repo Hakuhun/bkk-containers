@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: "bkk-backup"
+    ports:
+      - 27017:27017
+    volumes:
+      - "mongo_configdb:/data/configdb"
+      - "mongo_db:/data/db"
+      - "./mongo_init:/docker-entrypoint-initdb.d"
+
+volumes:
+  mongo_configdb:
+  mongo_db:
+
